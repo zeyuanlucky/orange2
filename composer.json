@@ -1,11 +1,11 @@
 {
-    "name": "orange/framework",
+    "name": "orange2/framework",
     "description": "this is mvc framework",
     "type": "l",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Orange\\Framework\\": "src/"
+            "Orange2\\Framework\\": "src/"
         }
     },
     "authors": [
