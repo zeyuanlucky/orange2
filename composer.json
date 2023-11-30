@@ -1,0 +1,19 @@
+{
+    "name": "orange/framework",
+    "description": "this is mvc framework",
+    "type": "l",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Orange\\Framework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "zeyuan",
+            "email": "zeyuanlucky@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
