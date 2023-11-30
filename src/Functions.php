@@ -1,5 +1,5 @@
 <?php
-    namespace Plant\Peach;
+    namespace Orange2\Framework;
 
     function speak($val){
         if (isset($val['code'])){

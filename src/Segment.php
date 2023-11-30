@@ -1,5 +1,5 @@
 <?php
-namespace Plant\Peach;
+namespace Orange2\Framework;
 
 use Monolog\Handler\IFTTTHandler;
 use function Couchbase\defaultEncoder;
@@ -54,8 +54,8 @@ class Segment{
     // 第二步-载入全局函数
     protected function _stepTwoLoadFunctions(){
         require (APP_PATH.DIRECTORY_SEPARATOR.'vendor'.
-            DIRECTORY_SEPARATOR.'plant'.
-            DIRECTORY_SEPARATOR.'peach'.
+            DIRECTORY_SEPARATOR.'orange2'.
+            DIRECTORY_SEPARATOR.'framework'.
             DIRECTORY_SEPARATOR.'src'.
             DIRECTORY_SEPARATOR.'Functions.php'
         );
