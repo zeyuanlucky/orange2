@@ -300,10 +300,12 @@ class Segment{
                     $appAbsolutePath = '\\App\\'.ucfirst($this->__AppCName).'\\'.ucfirst($this->__AppName).'\\Controller\\'.$className.'Controller';
                 }
 
-                //echo $appAbsolutePath;exit;
                 // 类是否存在
                 if(!class_exists($appAbsolutePath)){
-                    throw new \Exception("$appAbsolutePath 不存在，清创建！");
+                    $appAbsolutePath = '\\Addon\\'.ucfirst($this->__AppCName).'\\'.ucfirst($this->__AppName).'\\Controller\\'.$className.'Controller';
+                    if(!class_exists($appAbsolutePath)) {
+                        throw new \Exception("$appAbsolutePath 不存在，清创建！");
+                    }
                 }
 
                 $parseUrlArr = parse_url(getPageurl());
