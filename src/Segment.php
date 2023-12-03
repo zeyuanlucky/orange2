@@ -297,14 +297,14 @@ class Segment{
                     // 绝对路径类
                     $appAbsolutePath = $className;
                 }else{
-                    $appAbsolutePath = '\\App\\'.ucfirst($this->__AppCName).'\\'.ucfirst($this->__AppName).'\\Controller\\'.$className.'Controller';
+                    $app1 = $appAbsolutePath = '\\App\\'.ucfirst($this->__AppCName).'\\'.ucfirst($this->__AppName).'\\Controller\\'.$className.'Controller';
                 }
 
                 // 类是否存在
                 if(!class_exists($appAbsolutePath)){
                     $appAbsolutePath = '\\Addon\\'.ucfirst($this->__AppCName).'\\'.ucfirst($this->__AppName).'\\Controller\\'.$className.'Controller';
                     if(!class_exists($appAbsolutePath)) {
-                        throw new \Exception("$appAbsolutePath 不存在，清创建！");
+                        throw new \Exception("$appAbsolutePath 与 $app1 不存在，清创建！");
                     }
                 }
 
